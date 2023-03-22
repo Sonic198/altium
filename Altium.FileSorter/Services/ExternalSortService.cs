@@ -43,11 +43,11 @@ internal sealed class ExternalSortService : IExternalSortService
             return;
         }
 
-        var sortedFiles = await SortFiles(files);
+        var sortedFiles = await SortFilesAsync(files);
 
         _totalFilesToMerge = CalculateTotalFilesToMerge(sortedFiles, _settings.MergeFile.FilesPerRun);
 
-        await MergeFiles(sortedFiles, target, cancellationToken);
+        await MergeFilesAsync(sortedFiles, target, cancellationToken);
 
         sw.Stop();
 
@@ -114,7 +114,7 @@ internal sealed class ExternalSortService : IExternalSortService
         return filenames;
     }
 
-    private async Task<IReadOnlyList<string>> SortFiles(IReadOnlyCollection<string> unsortedFiles)
+    private async Task<IReadOnlyList<string>> SortFilesAsync(IReadOnlyCollection<string> unsortedFiles)
     {
         var sortedFiles = new List<string>(unsortedFiles.Count);
         double totalFiles = unsortedFiles.Count;
@@ -154,7 +154,7 @@ internal sealed class ExternalSortService : IExternalSortService
         Array.Clear(_unsortedRows, 0, _unsortedRows.Length);
     }
 
-    private async Task MergeFiles(
+    private async Task MergeFilesAsync(
         IReadOnlyList<string> sortedFiles, Stream target, CancellationToken cancellationToken)
     {
         var done = false;
