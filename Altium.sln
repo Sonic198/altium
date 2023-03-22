@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33110.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Altium.FileGenerator", "Altium.FileGenerator\Altium.FileGenerator.csproj", "{52EA75E5-7B66-459F-A8BE-C881FD813D4E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Altium.FileSorter", "Altium.FileSorter\Altium.FileSorter.csproj", "{60EB16C3-E611-4408-9A8F-FA84571AA863}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Altium.Shared", "Altium.Shared\Altium.Shared.csproj", "{BE8C0E31-D323-4EBF-88F0-DDEF05E04007}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{94FF0BCD-BF8F-4C95-A841-DA0AEB89E877}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Altium.FileGenerator.Test.Unit", "Altium.FileGenerator.Test.Unit\Altium.FileGenerator.Test.Unit.csproj", "{96A85343-BA46-44E5-8068-960A19023BD5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{93B98C71-4CB8-49BF-AD95-0561073552EF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{ADC9ACC4-49B4-474D-AA8C-B1B3DB44A313}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{8139FD3E-E76C-416D-B392-E29A5A268C06}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{52EA75E5-7B66-459F-A8BE-C881FD813D4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52EA75E5-7B66-459F-A8BE-C881FD813D4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52EA75E5-7B66-459F-A8BE-C881FD813D4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52EA75E5-7B66-459F-A8BE-C881FD813D4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60EB16C3-E611-4408-9A8F-FA84571AA863}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60EB16C3-E611-4408-9A8F-FA84571AA863}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60EB16C3-E611-4408-9A8F-FA84571AA863}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60EB16C3-E611-4408-9A8F-FA84571AA863}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE8C0E31-D323-4EBF-88F0-DDEF05E04007}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE8C0E31-D323-4EBF-88F0-DDEF05E04007}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE8C0E31-D323-4EBF-88F0-DDEF05E04007}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE8C0E31-D323-4EBF-88F0-DDEF05E04007}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94FF0BCD-BF8F-4C95-A841-DA0AEB89E877}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94FF0BCD-BF8F-4C95-A841-DA0AEB89E877}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94FF0BCD-BF8F-4C95-A841-DA0AEB89E877}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94FF0BCD-BF8F-4C95-A841-DA0AEB89E877}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96A85343-BA46-44E5-8068-960A19023BD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96A85343-BA46-44E5-8068-960A19023BD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96A85343-BA46-44E5-8068-960A19023BD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96A85343-BA46-44E5-8068-960A19023BD5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{52EA75E5-7B66-459F-A8BE-C881FD813D4E} = {93B98C71-4CB8-49BF-AD95-0561073552EF}
+		{60EB16C3-E611-4408-9A8F-FA84571AA863} = {93B98C71-4CB8-49BF-AD95-0561073552EF}
+		{BE8C0E31-D323-4EBF-88F0-DDEF05E04007} = {93B98C71-4CB8-49BF-AD95-0561073552EF}
+		{94FF0BCD-BF8F-4C95-A841-DA0AEB89E877} = {8139FD3E-E76C-416D-B392-E29A5A268C06}
+		{96A85343-BA46-44E5-8068-960A19023BD5} = {ADC9ACC4-49B4-474D-AA8C-B1B3DB44A313}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {62FCD343-554D-4AE1-8961-F37721742137}
+	EndGlobalSection
+EndGlobal
