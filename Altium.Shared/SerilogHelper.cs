@@ -4,7 +4,6 @@ using Serilog.Core;
 using Serilog.Exceptions;
 using Serilog.Exceptions.Core;
 using Serilog.Formatting.Compact;
-using System.Threading;
 
 namespace Altium.Shared;
 

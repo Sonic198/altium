@@ -1,13 +1,10 @@
 ﻿using Altium.FileSorter.Options;
 using Altium.Shared;
-using Altium.Shared.Dtos;
 using Altium.Shared.OptionsValidation;
 using FluentValidation;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Serilog;
-using System.Diagnostics;
 
 var host = Host.CreateDefaultBuilder()
     .ConfigureHostConfiguration(builder =>

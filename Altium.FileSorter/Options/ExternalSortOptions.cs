@@ -2,7 +2,7 @@
 
 namespace Altium.FileSorter.Options;
 
-internal sealed partial class ExternalSortOptions
+internal sealed class ExternalSortOptions
 {
     public const string Section = "ExternalSort";
 

@@ -5,9 +5,7 @@ using Bogus;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using System.Diagnostics;
-using System.Runtime.InteropServices;
 using System.Text;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace Altium.FileGenerator.Services;
 
@@ -51,15 +49,6 @@ internal sealed class FileGeneratorService : IFileGeneratorService
                 var data = _objectGenerator.Generate();               
 
                 var line = Encoding.Default.GetBytes($"{data.Number}. {data.Text}");
-
-                //var bytes = MemoryMarshal.AsBytes(MemoryMarshal.CreateSpan(ref zz, 1));
-
-                //var sp = new  Span<byte>(zz.Length);
-
-                //var line = Encoding.Default.GetBytes($"{data.Number}. {data.Text}{Environment.NewLine}".AsSpan(), sp);
-                //var line = MemoryMarshal.Cast<char, byte>(zz);
-
-                //stream.Write(sp);
 
                 await stream.WriteAsync(line, cancellationToken);
                 await stream.WriteAsync(newLine, cancellationToken);

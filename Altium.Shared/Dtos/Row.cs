@@ -1,37 +1,5 @@
 ﻿namespace Altium.Shared.Dtos;
 
-public ref struct RowStruct
-{
-    public uint Number { get; set; }
-    public ReadOnlySpan<char> Text { get; set; }
-    public int StreamReader { get; set; }
-
-    public RowStruct(uint number, ReadOnlySpan<char> text)
-    {
-        Number = number;
-        Text = text;
-    }
-}
-
-public static class RowStructExtensions
-{
-    //public static RowStruct Parse(this string text, ReadOnlySpan<char> splitOn)
-    //{
-    //    var span = text.AsSpan();
-    //    var splitAt = span.IndexOf(splitOn);
-
-    //    return new RowStruct(
-    //         uint.Parse(span.Slice(0, splitAt)),
-    //         span.Slice(splitAt).ToString()
-    //        );
-    //}
-
-    //public static RowStruct Parse(this string text, int streamReader, ReadOnlySpan<char> splitOn)
-    //{
-    //    return text.Parse(splitOn) with { StreamReader = streamReader };
-    //}
-}
-
 public record Row : IComparable<Row>
 {
     public Row()
